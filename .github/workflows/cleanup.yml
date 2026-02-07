@@ -1,0 +1,22 @@
+name: Remove node_modules
+
+on:
+  workflow_dispatch:
+
+jobs:
+  cleanup:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Remove node_modules
+        run: |
+          rm -rf node_modules frontend/node_modules backend/node_modules
+
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add -A
+          git commit -m "Remove node_modules from repository" || echo "Nothing to commit"
+          git push
