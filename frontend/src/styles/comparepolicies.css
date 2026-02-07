@@ -1,0 +1,120 @@
+/**
+ * Compare Policies Page Styles
+ */
+
+.compare-policies-page {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.comparison-forms {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 32px;
+  margin-top: 32px;
+  align-items: start;
+}
+
+.policy-form-panel {
+  background: white;
+  border-radius: 20px;
+  padding: 32px;
+  box-shadow: var(--shadow-md);
+  animation: fadeIn 0.6s ease-out;
+}
+
+.policy-a-panel {
+  border: 3px solid var(--primary);
+}
+
+.policy-b-panel {
+  border: 3px solid var(--secondary);
+}
+
+.panel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+  border-bottom: 2px solid var(--gray-200);
+}
+
+.panel-header h3 {
+  font-size: 1.5rem;
+  color: var(--gray-900);
+}
+
+.configured-badge {
+  padding: 4px 12px;
+  background: var(--success);
+  color: white;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.vs-divider-column {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 100px;
+}
+
+.vs-circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.5rem;
+  box-shadow: 0 8px 24px rgba(99, 102, 241, 0.3);
+  animation: pulse 2s infinite;
+}
+
+/* Compare Button */
+.compare-action {
+  text-align: center;
+  margin-top: 48px;
+}
+
+.compare-btn {
+  padding: 18px 48px;
+  font-size: 1.2rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Comparison Results */
+.comparison-results-page {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.results-header {
+  margin-bottom: 32px;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+  .comparison-forms {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .vs-divider-column {
+    padding-top: 0;
+    padding: 24px 0;
+  }
+
+  .vs-circle {
+    transform: rotate(90deg);
+  }
+}

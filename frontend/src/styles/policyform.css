@@ -1,0 +1,70 @@
+/**
+ * Policy Form Styles
+ */
+
+.policy-form {
+  animation: fadeIn 0.6s ease-out;
+}
+
+.form-label {
+  font-weight: 600;
+  color: var(--gray-800);
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+  display: block;
+}
+
+.value-badge {
+  display: inline-block;
+  padding: 4px 12px;
+  background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+  color: white;
+  border-radius: 20px;
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  margin-left: 8px;
+}
+
+.range-labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  color: var(--gray-500);
+  font-family: var(--font-mono);
+  margin-top: 8px;
+}
+
+.submit-btn {
+  margin-top: 24px;
+  font-size: 1.1rem;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.submit-btn .btn-icon {
+  font-size: 1.3rem;
+}
+
+.form-text {
+  font-size: 0.85rem;
+  font-family: var(--font-mono);
+  margin-top: 6px;
+}
+
+.input-group-text {
+  background: var(--gray-100);
+  border: 2px solid var(--gray-200);
+  border-right: none;
+  font-family: var(--font-mono);
+  font-weight: 600;
+  color: var(--gray-700);
+  border-radius: 10px 0 0 10px;
+}
+
+.input-group .form-control {
+  border-left: none;
+  border-radius: 0 10px 10px 0;
+}

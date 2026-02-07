@@ -1,0 +1,53 @@
+/**
+ * Results Page Styles
+ */
+
+.results-page {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.results-nav {
+  margin-bottom: 32px;
+}
+
+.back-btn {
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.back-btn:hover {
+  transform: translateX(-4px);
+}
+
+.no-results-page {
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+
+.no-results-content {
+  text-align: center;
+  background: white;
+  border-radius: 20px;
+  padding: 60px 40px;
+  box-shadow: var(--shadow-lg);
+  max-width: 500px;
+}
+
+.no-results-content h2 {
+  font-size: 2rem;
+  margin-bottom: 16px;
+  color: var(--gray-900);
+}
+
+.no-results-content p {
+  font-size: 1.1rem;
+  color: var(--gray-600);
+  margin-bottom: 32px;
+}
